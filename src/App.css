@@ -1,0 +1,138 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #f5f7fa,
+    #c3cfe2
+  ); /* Subtle gradient background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.task-manager {
+  background-color: #fff;
+  padding: 30px 40px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  width: 500px; /* Fixed width */
+  max-width: 90%; /* Responsive width */
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem; /* Larger font size */
+  color: #333;
+}
+
+.task-input {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  margin-bottom: 25px;
+  gap: 10px; /* Space between input and button */
+}
+
+.task-input input {
+  flex: 1;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow effect */
+}
+
+.task-input button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #007bff; /* Blue color for "Add Task" */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Button shadow */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.task-input button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  background: #f9f9f9; /* Slight background color for tasks */
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space between tasks */
+}
+
+.task-list span {
+  flex: 1;
+  font-size: 18px;
+}
+
+.task-list button.edit {
+  margin-left: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #28a745; /* Green color for "Edit" */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.task-list button.edit:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.task-list button.delete {
+  margin-left: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #dc3545; /* Red color for "Delete" */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.task-list button.delete:hover {
+  background-color: #c82333;
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.task-list button.save {
+  margin-left: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #ee862a; /* Yellow color for "Save" */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.task-list input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow effect */
+}
